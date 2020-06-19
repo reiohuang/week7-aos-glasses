@@ -1,0 +1,100 @@
+
+/* 導行欄 */
+.navbar {
+  background-color: $secondary;
+  padding: 30px 88px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo img{
+  display: block;
+}
+
+.navbar-list {
+  display: flex;
+  align-self: center;
+  a {
+    display: block;
+    padding: 7px 32px;
+    font-size: 20px;
+    color: $light;
+  }
+  li:last-child {
+    a {
+    padding-right: 0;
+    }
+  }
+}
+
+/* footer */
+.footer {
+  background-color: $secondary;
+  padding-top: 36px;
+  padding-bottom: 28px;
+  a {
+    color: $light;
+  }
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.menu-box {
+  display: flex;
+  li {
+    margin-right: 48px;
+  }
+}
+
+.sns-box {
+  display: flex;
+  li:not(:last-child) {
+    margin-right: 32px;
+  }
+}
+
+.contact-info {
+  font-size: 36px;
+  border-bottom: 1px solid $light;
+  margin-bottom: 24px;
+  li {
+    display: flex;
+    margin-bottom: 22px;
+  }
+  .tel {
+  margin-right: 23px;
+  vertical-align: middle;
+  }
+
+  .email {
+  margin-right: 12px;
+  vertical-align: middle;
+  }
+}
+
+.footer-copyright-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-copyright-item {
+  display: flex;
+  align-items: center;
+  img {
+    margin-right: 38px;
+  }
+  p {
+    color: $light;
+  }
+  a {
+    font-size: 14px;
+  }
+  a:first-child {
+    margin-right: 62px;
+  }
+}

@@ -1,0 +1,229 @@
+/* header */
+.headerIndex {
+  height: 840px;
+  background-image: url(../images/banner.png);
+  @include bg-center;
+  .banner {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .banner-title {
+    text-align: right;
+  }
+}
+
+/* about */
+.about {
+  background: $third;
+  padding-top: 64px;
+  padding-bottom: 80px;
+  h2 {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  &List {
+    display: flex;
+    align-items: baseline;
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 25%;
+      margin-right: 24px;
+      padding: 0 37px;
+    }
+    li:last-child {
+      margin-right: 0px;
+    }
+    img {
+      margin-bottom: 40px;
+    }
+    h5 {
+      text-align: center;
+      margin-bottom: 4px;
+    }
+    p {
+      color: $text-dark;
+    }
+  }
+}
+
+/* classic */
+.classic {
+  padding-top: 64px;
+  padding-bottom: 80px;
+}
+.classicTitle {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.classicListItem {
+  display: flex;
+  margin-bottom: 32px;
+}
+.classicListItemImg {
+  max-width: 66%;
+  margin-right: 24px;
+}
+.classicListItemText {
+  color: $secondary;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+}
+.classicListItemText img {
+  max-width: 48px;
+  margin-right: 8px;
+}
+.classicList li:nth-child(2) {
+  flex-direction: row-reverse;
+}
+.classicList li:nth-child(2) .classicListItemImg {
+  margin-right: 0;
+  margin-left: 24px;
+}
+.showGray {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: filter 1s;
+}
+.showGray:hover {
+  -webkit-filter: grayscale(0%);
+  transition: filter .3s;
+  filter: grayscale(0%);
+}
+
+/* joint */
+.joint {
+  background-image: url(../images/bg.png);
+  @include bg-center;
+padding-top: 64px;
+padding-bottom: 400px;
+  h2 {
+    text-align: center;
+    color: $light;
+    margin-bottom: 60px;
+  }
+}
+
+/* customer */
+.customer {
+  margin-top: -293px;
+  padding-bottom: 80px;
+  h2 {
+    text-align: center;
+    color: $light;
+    margin-bottom: 60px;
+  }
+  ul {
+    display: flex;
+    // margin-bottom: 80px;
+  }
+  li {
+    width: 25%;
+    margin-right: 24px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+.customerItemText {
+  padding: 16px;
+  border: 1px solid $border;
+  border-top: unset;
+  color: $customerItemText;
+  background: $light;
+}
+.customerItemTextName {
+  line-height: 21px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.customerItemTextContent {
+  margin-bottom: 16px;
+}
+.customerItemTextDate {
+  line-height: 21px;
+  color: $text-med;
+}
+
+/* contact */
+.contact {
+  background: $third;
+  padding-top: 64px;
+  padding-bottom: 92px;
+  color: $text-dark;
+}
+.contactContainer {
+  max-width: 792px;
+  margin: 0 auto;
+  h2 {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+}
+.contactText {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.contactForm {
+  .contactFormGroup {
+    margin-bottom: 16px;
+    label {
+      display: block;
+      margin-bottom: 4px;
+    }
+    input, textarea {
+      padding: 14px 16px;
+      border: 1px solid #000;
+      width: 100%;
+      background-color: transparent;
+      font-size: 16px;
+    }
+    textarea {
+      height: 136px;
+    }
+  }
+}
+.contactFormCheck {
+  display: flex;
+  align-items: center;
+  margin-bottom: 42px;
+  input[type="checkbox"] {
+    width: 24px;
+    height: auto;
+    margin-right: 4px;
+  }
+}
+// .contactFormSubmit {
+//   background-color: $secondary;
+//   width: 180px;
+//   height: 54px;
+//   margin: 0 auto;
+//   padding:16px 58px;
+//   text-decoration: none;
+//   a {
+//     color: $light;
+//     font-weight: bold;
+//     text-decoration: none;
+//   }
+//   .btn:hover {
+//     background-color: $primary;
+//   }
+// }
+.contactFormSubmit {
+  text-align: center;
+  .btn-submit {
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    background-color: $secondary;
+    padding: 16px 58px;
+    color: $light;
+    transition: background .1s;
+    &:hover {
+      background-color: $primary;
+    }
+  }
+}

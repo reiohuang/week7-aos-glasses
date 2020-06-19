@@ -1,0 +1,40 @@
+/* header */
+.headerFaq {
+  height: 304px;
+  background-image: url(../images/qa.png);
+  @include bg-center;
+  .banner {
+    display: flex;
+    align-items: flex-end;
+  }
+  .banner-title {
+    display: flex;
+    h1 {
+      color: $text-dark;
+      margin-right: 10px;
+    }
+  }
+}
+
+.faqList {
+  padding: 88px 0 156px 0;
+  color: $text-dark;
+  h4 {
+    margin-bottom: 16px;
+  }
+  li {
+    padding: 22px 0 22px 38px;
+    border: 1px solid #000000;
+    border-top: 0px;
+  }
+  li:first-child {
+    border-top: 1px solid #000000;
+  }
+  .question {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .answer {
+    background-color: #F2F2F2;
+  }
+}
